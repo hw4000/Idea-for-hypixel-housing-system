@@ -1,118 +1,110 @@
 Function RNG{
     Random_Action{
         Change_Player_Stat{
-            RNG = +1
+            RNG + 1
         }
         Change_Player_Stat{
-            RNG = +2
+            RNG + 2
         }
         Change_Player_Stat{
-            RNG = +3
+            RNG + 3
         }
         Change_Player_Stat{
-            RNG = +4
+            RNG + 4
         }
         Change_Player_Stat{
-            RNG = +5
-        }
-    }
-    Random_Action{
-        Change_Player_Stat{
-            RNG = +1
-        }
-        Change_Player_Stat{
-            RNG = +2
-        }
-        Change_Player_Stat{
-            RNG = +3
-        }
-        Change_Player_Stat{
-            RNG = +4
-        }
-        Change_Player_Stat{
-            RNG = +5
+            RNG + 5
         }
     }
     Random_Action{
         Change_Player_Stat{
-            RNG = +1
+            RNG + 1
         }
         Change_Player_Stat{
-            RNG = +2
+            RNG + 2
         }
         Change_Player_Stat{
-            RNG = +3
+            RNG + 3
         }
         Change_Player_Stat{
-            RNG = +4
+            RNG + 4
         }
         Change_Player_Stat{
-            RNG = +5
-        }
-    }
-    Random_Action{
-        Change_Player_Stat{
-            RNG = +1
-        }
-        Change_Player_Stat{
-            RNG = +2
-        }
-        Change_Player_Stat{
-            RNG = +3
-        }
-        Change_Player_Stat{
-            RNG = +4
-        }
-        Change_Player_Stat{
-            RNG = +5
+            RNG + 5
         }
     }
     Random_Action{
         Change_Player_Stat{
-            RNG = +1
+            RNG + 1
         }
         Change_Player_Stat{
-            RNG = +2
+            RNG + 2
         }
         Change_Player_Stat{
-            RNG = +3
+            RNG + 3
         }
         Change_Player_Stat{
-            RNG = +4
+            RNG + 4
         }
         Change_Player_Stat{
-            RNG = +5
+            RNG + 5
+        }
+    }
+    Random_Action{
+        Change_Player_Stat{
+            RNG + 1
+        }
+        Change_Player_Stat{
+            RNG + 2
+        }
+        Change_Player_Stat{
+            RNG + 3
+        }
+        Change_Player_Stat{
+            RNG + 4
+        }
+        Change_Player_Stat{
+            RNG + 5
+        }
+    }
+    Random_Action{
+        Change_Player_Stat{
+            RNG + 1
+        }
+        Change_Player_Stat{
+            RNG + 2
+        }
+        Change_Player_Stat{
+            RNG + 3
+        }
+        Change_Player_Stat{
+            RNG + 4
+        }
+        Change_Player_Stat{
+            RNG + 5
         }
     }
 }
 Function KOTM{
     Display_Title{
-
     }
     Play_Sound{
-
     }
     Send_Chat_Message{
-
     }
     Pause_Execution{
-
     }
     Continional{
         If(%stat.global/kotmbroadcast% => 1){
             Display_Title{
-
             }
             Play_Sound{
-
             }
         }
         Else{
             Display_Title{
-
             }
             Play_Sound{
-
             }
         }
     }
@@ -131,13 +123,11 @@ Function LapisRNG{
     Continional{
         If(%stat.player/RNG% = 8){
             Give_Item{
-
             }
             Change_Player_Stat{
                 %stat.player/RNG% = 0
             }
             Display_Title{
-
             }
         }
         Else{
@@ -151,13 +141,11 @@ Function AndesiteRNG{
     Continional{
         If(%stat.player/RNG% = 12){
             Give_Item{
-
             }
             Change_Player_Stat{
                 %stat.player/RNG% = 0
             }
             Display_Title{
-
             }
         }
         Else{
@@ -171,28 +159,20 @@ Function VikingRoom1{
     Continional{
         If(%stat.player/vikingroom% = 1){
             Teleport_Player{
-
             }
             Play_Sound{
-
             }
             Pause_Execution{
-
             }
             Send_Chat_Message{
-
             }
             Play_Sound{
-
             }
             Pause_Execution{
-
             }
             Send_Chat_Message{
-
             }
             Play_Sound{
-
             }
         }
         Else{
@@ -209,47 +189,35 @@ Function VikingRoom2{
                 %stat.player/vikingroom% = 1
             }
             Remove_Item{
-
             }
             Teleport_Player{
-
             }
             Pause_Execution{
-
             }
             Send_Chat_Message{
-
             }
             Play_Sound{
-
             }
             Pause_Execution{
-
             }
             Send_Chat_Message{
-
             }
             Play_Sound{
-
             }
         }
         Else{
             Display_Title{
-
             }
             Teleport_Player{
-
             }
-            Exit{}
+            Exit{
+            }
         }
     }
 }
 Function Santa{
-
 }
 Function Hearts1{
-
 }
 Function Hearts2{
-
 }
