@@ -121,7 +121,7 @@ Function WelcomeBack{
 }
 Function LapisRNG{
     Continional{
-        If(%stat.player/RNG% = 8){
+        If(%stat.player/RNG% == 8){
             Give_Item{
             }
             Change_Player_Stat{
@@ -139,7 +139,7 @@ Function LapisRNG{
 }
 Function AndesiteRNG{
     Continional{
-        If(%stat.player/RNG% = 12){
+        If(%stat.player/RNG% == 12){
             Give_Item{
             }
             Change_Player_Stat{
@@ -157,7 +157,7 @@ Function AndesiteRNG{
 }
 Function VikingRoom1{
     Continional{
-        If(%stat.player/vikingroom% = 1){
+        If(%stat.player/vikingroom% == 1){
             Teleport_Player{
             }
             Play_Sound{
@@ -184,7 +184,7 @@ Function VikingRoom1{
 }
 Function VikingRoom2{
     Continional{
-        If(Has_Item = 16){
+        If(Has_Item == 16){
             Change_Player_Stat{
                 %stat.player/vikingroom% = 1
             }
