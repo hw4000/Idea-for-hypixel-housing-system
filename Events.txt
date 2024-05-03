@@ -1,5 +1,32 @@
 Player_Join{
     Contitional{
+        If(%stat.player/playerid% == 0){
+            Change_Global_Stat{
+                total + 1
+            }
+            Change_Player_Stat{
+                playerid = %stat.global/total%
+            }
+            Change_Global_Stat{
+                broadcastid = %stat.player/playerid%
+            }
+            Trigger_Function{
+                WelcomeNewPlayer(All)
+            }
+        }
+        Else{
+            Change_Global_Stat{
+                broadcastid = %stat.player/playerid%
+            }
+            Trigger_Function{
+                WelcomeBack(All)
+            }
+        }
+    }
+    Apply_Potion_Effect{
+        Effect: Poison
+        Duration: 2000000
+        Level: 10
     }
 }
 Player_Quit{ 
@@ -9,6 +36,11 @@ Player_Death{
 Player_Kill{
 }
 Player_Respawn{
+    Apply_Potion_Effect{
+        Effect: Poison
+        Duration: 2000000
+        Level: 10
+    }
 }
 Group_Change{
 }
@@ -19,6 +51,21 @@ Fish_Caught{
 Player_Enter_Portal{
 }
 Player_Damage{
+    Continional{
+        If(Dmg_Cause == Poison){
+            Cancel_Event
+        }
+    }
+    Continional{
+        If(Dmg_Cause == Poison && %stat.global/kotmbroadcast% => 1){
+            Display_Action_Bar{
+            }
+        }
+        Else{
+            Display_Action_Bar{
+            }
+        }
+    }
 }
 Player_Block_Break{
 }
