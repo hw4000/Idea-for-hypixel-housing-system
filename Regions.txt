@@ -1,4 +1,4 @@
-KOTH{
+Region KOTH{
     Entry{
         Change_Global_Stat{
             %stat.global/kotmbroadcast% = %stat.player/playerid%
@@ -10,7 +10,7 @@ KOTH{
         }
     }
 }
-VikingRoom{
+Region VikingRoom{
     Entry{
         Trigger_Function{
             VikingRoom1
