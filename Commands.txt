@@ -1,0 +1,5 @@
+kotmstart{
+    Trigger_Function{
+        KOTM
+    }
+}

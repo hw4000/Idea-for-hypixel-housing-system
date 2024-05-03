@@ -1,0 +1,22 @@
+KOTH{
+    Entry{
+        Change_Global_Stat{
+            %stat.global/kotmbroadcast% = %stat.player/playerid%
+        }
+    }
+    Exit{
+        Change_Global_Stat{
+            %stat.global/kotmbroadcast% = 0
+        }
+    }
+}
+VikingRoom{
+    Entry{
+        Trigger_Function{
+            VikingRoom1
+        }
+    }
+    Exit{
+        
+    }
+}
